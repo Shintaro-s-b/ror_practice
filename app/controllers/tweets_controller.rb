@@ -4,6 +4,8 @@ def index
 end
 
   def show
+    @tweets = Tweet.all
+    render :json => @tweets
   end
 
 def create
