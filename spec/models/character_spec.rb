@@ -1,5 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Character, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'miho' do
+    it 'i want miho' do
+      expect( Character.getMiho['chara_name'] ).to eq 'miho'
+    end
+  end
 end
