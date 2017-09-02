@@ -17,4 +17,13 @@ RSpec.describe Character, type: :model do
       expect( Character.getBySchoolId(3).count ).to eq 5
     end
   end
+  describe 'check chara name' do
+    it 'ooarai menmber' do
+      expect( Character.find(1)['chara_name'] ).to eq 'miho'
+      expect( Character.find(2)['chara_name'] ).to eq 'saori'
+      expect( Character.find(3)['chara_name'] ).to eq 'hana'
+      expect( Character.find(4)['chara_name'] ).to eq 'yukari'
+      expect( Character.find(5)['chara_name'] ).to eq 'mako'
+    end
+  end
 end

@@ -25,4 +25,9 @@ class GarupanController < ApplicationController
     render :json => @schools
   end
 
+  def ooarai
+    @characters = Character.getAnkou
+    render :json => @characters
+  end
+
 end
